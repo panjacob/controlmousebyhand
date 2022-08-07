@@ -11,6 +11,7 @@ from object_detection.utils import label_map_util
 from pynput.mouse import Button, Controller
 from utilis import create_path
 from utilis import paths, files
+from screeninfo import get_monitors
 
 
 @tf.function
@@ -138,15 +139,15 @@ if __name__ == "__main__":
     MAX_DETECTIONS = 1
     IMAGE_SIZE = 320
     MIN_SCORE = 0.7
-    SCREEN_RESOLUTION = (2560, 1080)
+    monitor = get_monitors()[0]
+    SCREEN_RESOLUTION = (monitor.width, monitor.height)
     MOUSE_MOVE_RATIO = 1.5
     MOUSE_MOVE_SPEEDUP = (SCREEN_RESOLUTION[0] * MOUSE_MOVE_RATIO, SCREEN_RESOLUTION[1] * MOUSE_MOVE_RATIO)
     CLICKTIME = time.time()
     MOUSE = Controller()
-
     detection_model = init_detection_model()
-
     cap = cv2.VideoCapture(0)
+
     while True:
         ret, frame = cap.read()
         if frame is None:
