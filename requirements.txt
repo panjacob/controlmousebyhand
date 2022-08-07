@@ -1,0 +1,13 @@
+jupyter
+tensorflow
+scikit-learn
+opencv-python
+tqdm
+wget
+Cython
+cycler
+kiwisolver
+pyyaml
+tensorflow-object-detection-api
+pytz
+labelImg

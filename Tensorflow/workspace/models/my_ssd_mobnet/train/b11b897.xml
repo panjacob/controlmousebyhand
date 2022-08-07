@@ -1,0 +1,26 @@
+<annotation>
+	<folder>open</folder>
+	<filename>b11b897.jpg</filename>
+	<path>/home/panjacob/PycharmProjects/handmouse/images/open/b11b897.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>open</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>353</xmin>
+			<ymin>9</ymin>
+			<xmax>509</xmax>
+			<ymax>201</ymax>
+		</bndbox>
+	</object>
+</annotation>
